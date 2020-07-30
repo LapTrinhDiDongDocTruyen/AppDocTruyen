@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/background"
+    android:layout_margin="8dp">
+    <TextView
+        android:id="@+id/tenloai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Tên Loại"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"/>
+</RelativeLayout>

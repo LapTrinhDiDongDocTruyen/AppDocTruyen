@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".TruyenDetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingBottom="20dp"
+        >
+        <ImageView
+            android:id="@+id/anhtruyen"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/a"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            android:id="@+id/tentruyen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:text="Truyện tranh"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/anhtruyen"/>
+        <TextView
+            android:id="@+id/hienthi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tentruyen"
+            android:text="Tên Tác Giả:"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/anhtruyen"/>
+        <TextView
+            android:id="@+id/tentg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hienthi"
+            android:text="Facebook"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/anhtruyen"/>
+        <TextView
+            android:id="@+id/sochuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tentg"
+            android:text="Facebook"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/anhtruyen"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/recyclerview_bg"
+        android:layout_margin="20dp"
+        android:layout_height="200dp">
+        <TextView
+            android:id="@+id/noidungtruyen"
+            android:layout_width="match_parent"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:text="Nội dung truyện"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/ds_bg"
+        android:layout_below="@id/hienthi"
+        android:text="NHỮNG TRUYỆN CÙNG LOẠI"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/recyclerview_bg"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>

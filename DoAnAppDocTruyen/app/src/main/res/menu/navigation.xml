@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_DStruyen"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="Danh sách truyện"/>
+    <item
+        android:id="@+id/nav_TheLoai"
+        android:icon="@drawable/ic_baseline_bookmark_24"
+        android:title="Thể loại"/>
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/ic_baseline_history_24"
+        android:title="Lịch sử đọc"/>
+</group>
+    <item android:title="Thông tin ứng dụng">
+        <menu>
+            <item android:title="Version:v1.0.0"/>
+        </menu>
+    </item>
+</menu>

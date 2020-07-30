@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:isScrollContainer="true">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tenchap"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="TÊN CHƯƠNG"
+                android:textAlignment="center"
+                android:textColor="#0000ff"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/noidung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="gravity"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
